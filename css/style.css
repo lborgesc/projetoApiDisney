@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#191c29 ;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    background-image: url('../img/gkpb-disney-florida-dont-say-gay.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 5px 5px;
+    justify-content: space-between;
+    transform: scale(1);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: rgb(0 0 0) 5px 26px 30px -10px, 
+    rgb(0 0 0) 5px 16px 10px -10px; 
+}
+
+header .cabecalho{ 
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    background-color: #32374db4;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .cabecalho h1{
+    letter-spacing: .8rem;
+    font-weight: bold;
+}
+
+main{
+    border: 1px solid #191c27;
+    background: linear-gradient(#191c29, #32374d 50%, #10121a);
+}
+
+main .items{ 
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .itemCards{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    list-style-type: none;
+    padding-bottom: 50px;
+}
+
+main .card{
+    padding: 10px;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.247);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.7;
+    box-shadow: rgb(0 0 0 / 69%) 5px 26px 30px -10px, 
+                rgb(0 0 0 / 73%) 5px 16px 10px -10px;    
+}
+
+main .card:hover{
+    transform: scale(1.07);
+    border: 3px solid white;
+    opacity: 1;
+}
+
+main .card img{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+
+main .card h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+main button{
+    width: 15%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    letter-spacing: .8rem;
+    color: white;
+    margin: 80px 0;
+}
+
+main button:hover{
+    transform: scale(1.07);
+}
+
+footer{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e1018;
+}
+
+footer span{
+    color: white;
+    letter-spacing: .4rem;
+}
